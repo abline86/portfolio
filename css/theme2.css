@@ -1,0 +1,325 @@
+/* General body settings */
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #faf3e0; /* Light beige background */
+    color: #4e4e4e;
+    justify-items: center; /* Center the content horizontally */
+    align-items: start; /* Align items at the top of the container */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    grid-column: span 2;
+    background-color: #6f4f1e; /* Brown background */
+    color: white;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%; /* Make header span full width */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+}
+
+/* Navigation styles */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4f7f6; /* Light beige hover */
+}
+
+/* Section styles */
+section {
+    width: 80%; /* Make sections take up most of the page */
+    max-width: 1000px; /* Limit the maximum width */
+    margin: 40px auto; /* Center the section horizontally */
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Individual section border styling */
+.journey, .adventuress, .wanderess, .sea-lover {
+    border: 2px solid #6f4f1e; /* Brown border for each section */
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+/* Title styles */
+h2 {
+    font-size: 2rem;
+    color: #6f4f1e;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #6f4f1e;
+}
+
+/* Image styles */
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.images img {
+    max-width: 200px;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer styles */
+footer {
+    grid-column: span 2;
+    background-color: #6f4f1e; /* Brown background */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 12px;
+    width: 100%; /* Make footer span full width */
+    margin-top: 40px; /* Give footer a bit of space above */
+}
+
+/* Music Section Styles */
+#music-section {
+    background-color: #f4f7f6; /* Brown background for music section */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#music-section h2 {
+    font-size: 2.4rem;
+    color: #6f4f1e;
+}
+
+#music-section p {
+    font-size: 1.2rem;
+    color: #4e4e4e;
+    margin: 20px 0;
+}
+
+#music-section .music-player {
+    margin: 20px auto;
+    display: block;
+    max-width: 600px;
+}
+
+/* Music Section Image Styles */
+#music-section .music-image {
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Quotes Section Styles */
+#quotes-section {
+    background-color: #fff8e1; /* Brown background for quotes section */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#quotes-section h2 {
+    font-size: 2.4rem;
+    color: #6f4f1e;
+}
+
+#quotes-section p {
+    font-size: 1.2rem;
+    color: #4e4e4e;
+    margin: 20px 0;
+}
+
+#quotes-section blockquote {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #4e4e4e;
+    margin-top: 20px;
+    border-left: 4px solid #6f4f1e;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Assuming you are styling the container for centered alignment */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items horizontally center */
+    text-align: center; /* Center the text */
+}
+
+#contact {
+    max-width: 600px; /* Set a max width for your contact section */
+    width: 100%; /* Make it responsive */
+    margin: 20px; /* Space around section */
+}
+
+/* Centering the form */
+form {
+    display: flex;
+    flex-direction: column; /* Align form elements in a column */
+    align-items: center; /* Center form elements horizontally */
+}
+
+label, input, textarea, button {
+    width: 100%; /* Full width for the elements, you can adjust this */
+    max-width: 400px; /* Limit the width of inputs for better look */
+    margin: 10px 0; /* Margin around form elements */
+}
+
+/* Button styling (optional) */
+button {
+    cursor: pointer; /* Change cursor to pointer for clickable buttons */
+    padding: 10px; /* Padding inside the button */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Basic Reset and Body Styling */
+body {
+    font-family: Arial, sans-serif; /* Set a standard font */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    background-color: #f4f4f4; /* Light background color */
+}
+
+/* Header Styling */
+header {
+    background-color: #333; /* Brown background for header */
+    color: white; /* White text */
+    padding: 1rem; /* Padding around header */
+    width: 100%; /* Full width */
+}
+
+/* Navigation Bar Styling */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    display: inline; /* Display list items in a line */
+    margin: 0 15px; /* Spacing between items */
+}
+
+nav ul li a {
+    color: white; /* Link color in the nav */
+    text-decoration: none; /* Remove underline */
+}
+
+/* Gallery Section Styling */
+#gallery {
+    margin: 20px; /* Margin around the whole section */
+    max-width: 900px; /* Limit max width */
+}
+
+/* Gallery Images Styling */
+.gallery-images {
+    display: flex; /* Use flexbox for image layout */
+    flex-wrap: wrap; /* Allow images to wrap */
+    justify-content: center; /* Center images */
+    gap: 10px; /* Space between images */
+}
+
+.gallery-images img {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Video section styling */
+h2 {
+    margin-top: 30px; /* Space above each section header */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Center the video */
+    margin: 20px 0; /* Space around videos */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333; /* Brown background for footer */
+    color: white; /* White text */
+    text-align: center; /* Center text */
+    padding: 1rem; /* Padding around footer */
+    position: relative; /* Allow it to hold its own space */
+    width: 100%; /* Full width */
+}
+
+.section-grid {
+    display: flex; /* Use Flexbox for layout */
+    flex-wrap: wrap; /* Allow sections to wrap to the next line */
+    justify-content: space-around; /* Space out sections evenly */
+}
+
+.section-grid > div {
+    flex: 1 1 20%; /* Allow sections to grow and shrink, with a base width of 20% */
+    margin: 10px; /* Add some margin around each section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for visual separation */
+    padding: 15px; /* Optional: Add padding inside each section */
+    background-color: #f9f9f9; /* Optional: Background color */
+    border-radius: 5px; /* Optional: Rounded borders */
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap */
+    justify-content: center; /* Center images */
+}
+
+.images img {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 5px; /* Space between images */

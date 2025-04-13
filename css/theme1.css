@@ -1,0 +1,109 @@
+/* General body settings */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #faf3e0; /* Light beige background */
+    color: #4e4e4e;
+    min-height: 100vh; /* Ensures the body takes at least the full height of the viewport */
+}
+
+/* Header styles */
+header {
+    background-color: #6f4f1e; /* Brown background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navigation styles */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4f7f6; /* Light beige hover */
+}
+
+/* Section styles */
+section {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px 0;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: left;   /* Aligns text to the left */
+    font-size: 2rem;
+    color: #6f4f1e;
+}
+
+/* Image styles */
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.images img {
+    max-width: 200px;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Footer styles */
+footer {
+    width: 100%;
+    background-color: #6f4f1e;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin-top: auto; /* Ensures the footer stays at the bottom */
+}
+
+#home {
+    text-align: center; /* Center-align text */
+}
+
+#home img {
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
